@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useStateValue } from '../../../StateProvider';
 import { firebase } from '../../firebase/config'
 
 export default function AppLoaderScreen({navigation}) {
     const [{user, email, fullname}, dispatch] = useStateValue();
+    const [loading, setLoading] = useState(true)
+
+   
 
     useEffect(() => {
         const usersRef = firebase.firestore().collection('users');
@@ -18,19 +21,26 @@ export default function AppLoaderScreen({navigation}) {
                  type: 'SET_USER',
                  user: document.data().id,
                  email: document.data().email,
-                 fullname: document.data().fullName,
+                 fullname: document.data().fullName,                 
                })
+               setLoading(false)
               })
               .catch((error) => {
-                // setLoading(false)
+                setLoading(false)
               });
           } else {
-            // setLoading(false)
+            setLoading(false)            
           }
         });
       }, []);
    
-  
+      if (loading) {
+        console.log("user>>>", user)	
+        return (	          
+         <>         
+         Loading...</>	
+        )	
+      }
 
   return (
     <>

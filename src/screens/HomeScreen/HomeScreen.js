@@ -1,116 +1,76 @@
-import React, { useEffect, useState } from 'react'
-import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View, SafeAreaView } from 'react-native'
-import styles from './styles';
-import { firebase } from '../../firebase/config'
+import React from 'react'
+import { FlatList,SafeAreaView, Text, View,ScrollView, TouchableOpacity } from 'react-native';
 import { useStateValue } from '../../../StateProvider';
+import styles from './styles';
+import RTCData from '../../../assets/RTCData.json';
+
 
 export default function HomeScreen({navigation}) {
     const [{user, fullname}, dispatch] = useStateValue();
-    const [entityText, setEntityText] = useState('')
-    const [entities, setEntities] = useState([])
 
-    const entityRef = firebase.firestore().collection('entities')
-    // console.log("INSIDE HOME>>>", extraData)
-    // const userID = extraData.id
-    // const userName = extraData.fullName
-    
-    useEffect(() => {
-        console.log("inside home->useeffect>>>>",user)
-        entityRef
-            .where("authorID", "==", user)
-            .orderBy('createdAt', 'desc')
-            .onSnapshot(
-                querySnapshot => {
-                    const newEntities = []
-                    querySnapshot.forEach(doc => {
-                        const entity = doc.data()
-                        entity.id = doc.id
-                        newEntities.push(entity)
-                    });
-                    setEntities(newEntities)
-                },
-                error => {
-                    console.log(error)
-                }
-            )
-    }, [])
-
-    const onLogoutButtonPress = () => {
-        firebase.auth().signOut(); 
-        dispatch(
-            {
-                type: 'SET_USER',
-                user: null,
-                fullname: 'LOGGED-OUT',
-            }
-        )
+    // console.log(RTCData);
+    const onLoginPress = () => {
+        console.log("login>>>>")
         navigation.navigate('Login')
     }
 
-    const onAddButtonPress = () => {
-        if (entityText && entityText.length > 0) {
-            const timestamp = firebase.firestore.FieldValue.serverTimestamp();
-            const data = {
-                text: entityText,
-                authorID: user,
-                createdAt: timestamp,
-            };
-            entityRef
-                .add(data)
-                .then(_doc => {
-                    setEntityText('')
-                    Keyboard.dismiss()
-                })
-                .catch((error) => {
-                    alert(error)
-                });
-        }
-    }
-
-    const renderEntity = ({item, index}) => {
-        return (
-            <View style={styles.entityContainer}>
-                <Text style={styles.entityText}>
-                    {/* {index}. {item.text} */}
-                    {item.text}
-                </Text>
-            </View>
-        )
-    }
 
     return (
-        <SafeAreaView>
-        <View style={styles.container}>
-            <View>
-                <Text>Logged In : {fullname}</Text>
-                <TouchableOpacity style={styles.button} onPress={onLogoutButtonPress}>
-                    <Text style={styles.buttonText}>Logout</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.formContainer}>
-                <TextInput
-                    style={styles.input}
-                    placeholder='Add new entity'
-                    placeholderTextColor="#aaaaaa"
-                    onChangeText={(text) => setEntityText(text)}
-                    value={entityText}
-                    underlineColorAndroid="transparent"
-                    autoCapitalize="none"
+        <SafeAreaView style={styles.container}>
+        <View >
+             <View style={styles.header}>
+                 <Text style={styles.headerText}>ROMBLONTransport</Text>
+             </View>
+
+             <View style={styles.nav}>
+                    <View style={styles.navItem}>
+                        <TouchableOpacity><Text>Login</Text></TouchableOpacity>
+                    </View>
+                    <View style={styles.navItem}>
+                        <TouchableOpacity><Text>Logout</Text></TouchableOpacity>
+                    </View>
+                    <View style={styles.navItem}>
+                        <TouchableOpacity><Text>Upload</Text></TouchableOpacity>
+                    </View>
+             </View>
+
+             <ScrollView horizontal={true} style={styles.scrollView}>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => navigation.navigate('Login')}><Text >Menu1</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => navigation.navigate('Registration')}><Text>Menu2</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => alert('menu3')}><Text>Menu3</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => alert('menu4')}><Text>Menu4</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => alert('menu5')}><Text>Menu5</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => alert('menu6')}><Text>Menu6</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => alert('menu7')}><Text>Menu7</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItem} onPress={() => alert('menu8')}><Text>Menu8</Text></TouchableOpacity>
+             </ScrollView>
+             <View >
+             <FlatList
+                style={styles.containerx}
+                data={RTCData.fares.odiongan}
+                renderItem={({ item }) => <Text style={styles.row}>{item.destination} - {item.rental}</Text>}
+                keyExtractor={(item) => item.destination}
                 />
-                <TouchableOpacity disabled={!entityText} style={styles.button} onPress={onAddButtonPress}>
-                    <Text style={styles.buttonText}>Add</Text>
-                </TouchableOpacity>
-            </View>
-            { entities && (
-                <View style={styles.listContainer}>
-                    <FlatList
-                        data={entities}
-                        renderItem={renderEntity}
-                        keyExtractor={(item) => item.id}
-                        removeClippedSubviews={true}
-                    />
                 </View>
-            )}
+             <ScrollView style={styles.body}>
+    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu1')}><Text>{RTCData.main.title}</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu2')}><Text>Menu2</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu3')}><Text>Menu3</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu4')}><Text>Menu4</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu5')}><Text>Menu5</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu6')}><Text>Menu6</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu7')}><Text>Menu7</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu8')}><Text>Menu8</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu1')}><Text>Menu1</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu2')}><Text>Menu2</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu3')}><Text>Menu3</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu4')}><Text>Menu4</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu5')}><Text>Menu5</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu6')}><Text>Menu6</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu7')}><Text>Menu7</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.scrollItemx} onPress={() => alert('menu8')}><Text>Menu8</Text></TouchableOpacity>
+             </ScrollView>
+
         </View>
         </SafeAreaView>
     )

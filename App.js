@@ -17,8 +17,8 @@ export default function App() {
   return (
     <StateProvider initialState={initialState} reducer={reducer}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="AppLoader">
-          <Stack.Screen name="AppLoader" component={AppLoaderScreen} />
+        <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
+          {/* <Stack.Screen name="AppLoader" component={AppLoaderScreen} /> */}
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Registration" component={RegistrationScreen} />

@@ -1,0 +1,356 @@
+{
+  "main": {
+    "title"       : "We are the 1st Transport Cooperative In The Province of ROMBLON",
+    "cda"         : "Cooperative Development Authority",
+    "cdano"       : "Reg. No. 9520-1018000000046928",
+    "cdadate"     : "13th September 2019",
+    "name"        : "Romblon Transport Cooperative (RTC)",
+    "about"       : "was formed in compliance with the PUV modernization program. RTC aims to provide quality transport services, support the government for modernized transport system and ultimately bring about economic progress."
+  },
+  "contacts": {
+    "mobile"      : "+63 xxx xxx xxxx",
+    "email"       : "romblontransport@yahoo.com",
+    "address"     : "Poblacion, San Agustin, Romblon",
+    "website"     : "https://romblontrans.web.app",
+    "facebook"    : "https://facebook.com/romblontrans",
+    "twitter"     : "https://twitter.com/romblontrans",
+    "instagram"   : "https://instagram.com/romblontrans"
+  },
+  "about":{
+    "vision"      : "To be Romblon's pride in connecting People, Businesses and Communities to a better future through Transport Services.",
+    "mission1"    : "To provide the best Transport System which is;",
+    "mission2"    : "Safe, Reliable, Efficient, and Environmentally Friendly",
+    "mission3"    : "Caring to the Customers, Commuting Public, Drivers and Operators",
+    "mission4"    : "Concerned for the Community Development and Economic Growth",
+    "corevalues"  : "Loyalty, Honesty, Efficiency, Reliability, Trust, Commitment, Transparency, Respect"
+  },
+  
+  "geninfo":{
+    "type"        : "Transport",
+    "area"        : "Province of ROMBLON",
+    "bond"        : "Occupational",
+    "members"     : "Employees, Operators & Drivers",
+    "tin"         : "756-296-750-000"
+  },
+  "business": {
+    "services": [
+      {
+        "title": "Sales of Vehicle Parts",
+        "description": "PRICE is what you pay VALUE is what you get.",
+        "image": "s1.jpg"
+      },
+      {
+        "title": "Sales of Vehicle Accessories",
+        "description": "The CARS we DRIVE says a lot about us.",
+        "image": "s2.jpg"
+      },
+      {
+        "title": "AUV Operation",
+        "description": "Making transportation FAST and SAFE.",
+        "image": "s3.jpg"
+      },
+      {
+        "title": "Jeepney Operation",
+        "description": "COMPETITIVE rates, safety and reliable on-time.",
+        "image": "s4.jpg"
+      },
+      {
+        "title": "Tour Van Rental",
+        "description": "Sit back, RELAX and ENJOY the ride!",
+        "image": "s5.jpg"
+      },
+      {
+        "title": "Car Insurance",
+        "description": "Don't WORRY, drive HAPPY!",
+        "image": "s6.jpg"
+      }
+    ]
+  },
+  "fares": {
+    "odiongan": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "San Agustin",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Bachawan",
+        "rental": "PhP 2,000.00"
+      }
+    ],
+    "sanagustin": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Odiongan",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 2,000.00"
+      }
+    ],
+    "tugdan": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 1,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Odiongan",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "San Agustin",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 1,500.00"
+      }
+    ],
+    "others": [
+      {
+        "origin":"San Agustin",
+        "destination": "Odiongan via Cabaliwan",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "origin":"Bachawan",
+        "destination": "Odiongan via Cabaliwan",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Odiongan",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Tugdan",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Sta. Fe",
+        "rental": "PhP 3,500.00"
+      }
+    ]
+  },
+  "officers":{
+    "bod":[
+      {
+        "name":"Randy Madamo",
+        "position":"Chairman"
+      },
+      {
+        "name":"Jose Luis Fabic",
+        "position":"Vice-Chairman"
+      },
+      {
+        "name":"Adrian Gaytano",
+        "position":"Member"
+      },
+      {
+        "name":"Justino Alojado",
+        "position":"Member"
+      },
+      {
+        "name":"---",
+        "position":"Member"
+      }
+    ],
+    "audit":[
+      {
+        "name": "Isaias Lota",
+        "position": "Chairman"
+      },
+      {
+        "name": "Sunday Montesa",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Roberto Maines",
+        "position": "Member"
+      }
+    ],
+    "election":[
+      {
+        "name": "Adonis Famini",
+        "position": "Chairman"
+      },
+      {
+        "name": "Crisostomo Ballera",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Simplicio Mortel",
+        "position": "Member"
+      }
+    ],
+    "admin1":[
+      {
+        "name": "Maricar Lachica",
+        "position": "Secretary"
+      },
+      {
+        "name": "Archiel Casanova",
+        "position": "Treasurer"
+      }
+    ],
+    "education":[
+      {
+        "name": "Jose Luis Fabic",
+        "position": "Chairman"
+      },
+      {
+        "name": "Joceber Gange",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Ernesto Fajilagot",
+        "position": "Member"
+      }
+    ],
+    "mediation":[
+      {
+        "name": "Anacris Galisanao",
+        "position": "Chairman"
+      },
+      {
+        "name": "Nicolas Omemaga",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Margie Mangaya",
+        "position": "Member"
+      }
+    ],
+    "ethics":[
+      {
+        "name": "Arturo Mindoro",
+        "position": "Chairman"
+      },
+      {
+        "name": "Dothy Lyn Mangoba",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "Judy Ferran",
+        "position": "Member"
+      }
+    ],
+    "gad":[
+      {
+        "name": "Michelle Maghanoy",
+        "position": "Chairman"
+      },
+      {
+        "name": "Zenaida Manzano",
+        "position": "Vice-Chairman"
+      },
+      {
+        "name": "---",
+        "position": "Member"
+      }
+    ],
+    "admin2":[
+      {
+        "name": "Kim Faderon",
+        "position": "General Manager"
+      },
+      {
+        "name": "---",
+        "position": "Accountant"
+      },
+      {
+        "name": "---",
+        "position": "Book Keeper"
+      }
+    ],
+    "operation":[
+      {
+        "name": "---",
+        "position": "Store Keeper"
+      },
+      {
+        "name": "---",
+        "position": "Cashier"
+      },
+      {
+        "name": "Allan Moreno",
+        "position": "Dispatcher"
+      }
+    ]
+  }
+}
+
+ 
