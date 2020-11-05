@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View, SafeAreaView } from 'react-native'
 import styles from './styles';
 import { firebase } from '../../firebase/config'
 import { useStateValue } from '../../../StateProvider';
 
-export default function HomeScreen({extraData}) {
+export default function HomeScreen({navigation}) {
     const [{user, fullname}, dispatch] = useStateValue();
     const [entityText, setEntityText] = useState('')
     const [entities, setEntities] = useState([])
 
     const entityRef = firebase.firestore().collection('entities')
+    // console.log("INSIDE HOME>>>", extraData)
+    // const userID = extraData.id
+    // const userName = extraData.fullName
     
-    const userID = extraData.id
-    const userName = extraData.fullName
-
-    // console.log("INSIDE HOME>>>", userName)
     useEffect(() => {
+        console.log("inside home->useeffect>>>>",user)
         entityRef
-            .where("authorID", "==", userID)
+            .where("authorID", "==", user)
             .orderBy('createdAt', 'desc')
             .onSnapshot(
                 querySnapshot => {
@@ -33,15 +33,6 @@ export default function HomeScreen({extraData}) {
                     console.log(error)
                 }
             )
-
-        dispatch(
-            {
-                type: 'SET_USER',
-                user: userID,
-                fullname: userName,
-            }
-        )
-
     }, [])
 
     const onLogoutButtonPress = () => {
@@ -53,7 +44,7 @@ export default function HomeScreen({extraData}) {
                 fullname: 'LOGGED-OUT',
             }
         )
-        // navigation.navigate('Home')
+        navigation.navigate('Login')
     }
 
     const onAddButtonPress = () => {
@@ -61,7 +52,7 @@ export default function HomeScreen({extraData}) {
             const timestamp = firebase.firestore.FieldValue.serverTimestamp();
             const data = {
                 text: entityText,
-                authorID: userID,
+                authorID: user,
                 createdAt: timestamp,
             };
             entityRef
@@ -88,6 +79,7 @@ export default function HomeScreen({extraData}) {
     }
 
     return (
+        <SafeAreaView>
         <View style={styles.container}>
             <View>
                 <Text>Logged In : {fullname}</Text>
@@ -120,5 +112,6 @@ export default function HomeScreen({extraData}) {
                 </View>
             )}
         </View>
+        </SafeAreaView>
     )
 }

@@ -3,10 +3,13 @@ import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
 import { firebase } from '../../firebase/config'
+import { useStateValue } from '../../../StateProvider';
 
 export default function LoginScreen({navigation}) {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [{user, email, fullname}, dispatch] = useStateValue();
+
+    const [emailInput, setEmailInput] = useState('')
+    const [passwordInput, setPasswordInput] = useState('')
 
     const onFooterLinkPress = () => {
         navigation.navigate('Registration')
@@ -15,7 +18,7 @@ export default function LoginScreen({navigation}) {
     const onLoginPress = () => {
         firebase
             .auth()
-            .signInWithEmailAndPassword(email, password)
+            .signInWithEmailAndPassword(emailInput, passwordInput)
             .then((response) => {
                 const uid = response.user.uid
                 const usersRef = firebase.firestore().collection('users')
@@ -28,7 +31,13 @@ export default function LoginScreen({navigation}) {
                             return;
                         }
                         const user = firestoreDocument.data()
-                        navigation.navigate('Home', {user})
+                        dispatch({
+                            type: 'SET_USER',
+                            user: user.id,
+                            email: user.email,
+                            fullname: user.fullName,
+                          })
+                        navigation.navigate('Home')
                     })
                     .catch(error => {
                         alert(error)
@@ -47,14 +56,15 @@ export default function LoginScreen({navigation}) {
                 keyboardShouldPersistTaps="always">
                 <Image
                     style={styles.logo}
+                    resizeMode={'contain'} 
                     source={require('../../../assets/icon.png')}
                 />
                 <TextInput
                     style={styles.input}
                     placeholder='E-mail'
                     placeholderTextColor="#aaaaaa"
-                    onChangeText={(text) => setEmail(text)}
-                    value={email}
+                    onChangeText={(text) => setEmailInput(text)}
+                    value={emailInput}
                     underlineColorAndroid="transparent"
                     autoCapitalize="none"
                 />
@@ -63,8 +73,8 @@ export default function LoginScreen({navigation}) {
                     placeholderTextColor="#aaaaaa"
                     secureTextEntry
                     placeholder='Password'
-                    onChangeText={(text) => setPassword(text)}
-                    value={password}
+                    onChangeText={(text) => setPasswordInput(text)}
+                    value={passwordInput}
                     underlineColorAndroid="transparent"
                     autoCapitalize="none"
                 />
