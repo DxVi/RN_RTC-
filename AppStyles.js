@@ -1,5 +1,4 @@
 import { Platform, StyleSheet, Dimensions } from "react-native";
-import { Configuration } from "./Configuration";
 
 const { width, height } = Dimensions.get("window");
 const SCREEN_WIDTH = width < height ? width : height;
@@ -7,28 +6,22 @@ const numColumns = 2;
 
 export const AppStyles = {
   color: {
-    main: "#5ea23a",
+    title: '#2c455d',
+    header: '#4267b2',
+    item: '#4267b2',
+    description: '#2c455d',
     text: "#696969",
-    title: "#464646",
-    subtitle: "#545454",
-    categoryTitle: "#161616",
-    tint: "#ff5a66",
-    description: "#bbbbbb",
-    filterTitle: "#8a8a8a",
-    starRating: "#2bdf85",
-    location: "#a9a9a9",
-    white: "white",
-    facebook: "#4267b2",
-    grey: "grey",
-    greenBlue: "#00aea8",
-    placeholder: "#a0a0a0",
-    background: "#f2f2f2",
-    blue: "#3293fe"
+    
+    white: '#FFFFFF',
+    black: '#666666',
+    border: '#dae4f3',
   },
   fontSize: {
-    title: 30,
-    content: 20,
-    normal: 16
+    title: 25,
+    header: 20,
+    item: 15,
+    description: 15,
+    text: 12,
   },
   buttonWidth: {
     main: "70%"
@@ -45,7 +38,58 @@ export const AppStyles = {
     small: 5
   }
 };
+//-----------------------------------------------------------------------------------------------
+export const RTC = {
+  romblon:{
+    fontSize: AppStyles.fontSize.description,
+    fontWeight: 'bold',
+    color: AppStyles.color.header,
+    fontFamily: 'sans-serif',
+  },
+  transport:{
+    opacity: .85,
+  },
+  logoS:{
+    width: 40,
+    height:40,
+    margin: 5,
+  },
+  logoM:{
+    width: 250,
+    height: 311,
+    margin: 5,
+  },
+  title:{
+    fontWeight: 'bold',
+    color: AppStyles.color.title,
+    fontSize: AppStyles.fontSize.title,
+  },
+  header:{
+    fontWeight: 'bold',
+    color: AppStyles.color.header,
+    fontSize: AppStyles.fontSize.header,
+  },
+  item:{
+    fontWeight: 'normal',
+    color: AppStyles.color.item,
+    fontSize: AppStyles.fontSize.description,
+  },
+  description:{
+    // lineHeight: 20,
+    fontWeight: 'normal',
+    color: AppStyles.color.description,
+    fontSize: AppStyles.fontSize.description,
+  },
+  text:{
+    fontWeight: 'normal',
+    color: AppStyles.color.text,
+    fontSize: AppStyles.fontSize.text,
+    // lineHeight: 20,
+  },
+}
 
+
+//-----------------------------------------------------------------------------------------------
 export const AppIcon = {
   container: {
     backgroundColor: "white",
@@ -58,11 +102,6 @@ export const AppIcon = {
     width: 25,
     height: 25
   },
-  images: {
-    home: require("../assets/icons/home.png"),
-    defaultUser: require("../assets/icons/default_user.jpg"),
-    logout: require("../assets/icons/shutdown.png")
-  }
 };
 
 export const HeaderButtonStyle = StyleSheet.create({
@@ -107,3 +146,78 @@ export const ListStyle = StyleSheet.create({
     width: 80
   }
 });
+
+// -------------------------------------------------------------------------------------------
+ 
+export const Container = StyleSheet.create({
+  main:{
+    flex: 1,
+    backgroundColor: AppStyles.color.white,
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: AppStyles.color.white,
+    width: '100%',
+    height: 43,
+    borderBottomWidth: 1,
+    borderBottomColor: AppStyles.color.border,
+  },
+  menuIcons:{
+    backgroundColor: AppStyles.color.white,
+    width: '100%',
+    height: 25,
+    flexDirection: 'row',
+  },
+  menuImages:{
+    backgroundColor: AppStyles.color.white,
+    width: '100%',
+    height: 130,
+    flexDirection: 'row',
+  },
+  home: {
+    backgroundColor: AppStyles.color.white,
+    width: '100%',
+    height: '100%',
+    padding: 20,
+  },
+  normal:{
+    margin: 10,
+  },
+  basic:{
+    backgroundColor: AppStyles.color.white,
+    width: '100%',
+    flex: 1,
+    alignItems: 'center',
+  },
+  officers:{
+    width: '100%',
+    flex: 1,
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    justifyContent: "center",
+  },
+  officerCard:{
+    backgroundColor: AppStyles.color.white,
+    width: 150,
+    height: 150,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderStyle: 'dotted',
+    borderWidth: .5,
+    borderColor: AppStyles.color.border,
+    margin: 5,
+  },
+  chairman:{
+    backgroundColor: AppStyles.color.white,
+    width: 350,
+    height: 150,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderStyle: 'dotted',
+    borderWidth: .5,
+    borderColor: AppStyles.color.border,
+    margin: 5,
+  }
+});
+ 

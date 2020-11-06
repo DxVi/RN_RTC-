@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FlatList, Keyboard, Text, TextInput, TouchableOpacity, View, SafeAreaView } from 'react-native'
-import styles from './styles';
-import { firebase } from '../../firebase/config'
-import { useStateValue } from '../../../StateProvider';
+import { firebase } from './firebase/config'
+import { useStateValue } from '../StateProvider';
 
 export default function HomeScreen({navigation}) {
     const [{user, fullname}, dispatch] = useStateValue();
