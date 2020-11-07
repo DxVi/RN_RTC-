@@ -44,10 +44,12 @@ export const RTC = {
     fontSize: AppStyles.fontSize.desc,
     fontWeight: 'bold',
     color: AppStyles.color.header,
-    fontFamily: 'sans-serif',
+    // fontFamily: 'sans-serif',
+    textAlign: 'justify',
   },
   transport:{
     opacity: .85,
+
   },
   logoS:{
     width: 40,
@@ -60,9 +62,11 @@ export const RTC = {
     margin: 5,
   },
   title:{
+    width: '70%',
     fontWeight: 'bold',
     color: AppStyles.color.title,
     fontSize: AppStyles.fontSize.title,
+    textAlign: 'center',
   },
   header:{
     fontWeight: 'bold',
@@ -73,20 +77,16 @@ export const RTC = {
     fontWeight: 'normal',
     color: AppStyles.color.item,
     fontSize: AppStyles.fontSize.desc,
-    // alignSelf: 'flex-end',
   },
   desc:{
-    // lineHeight: 20,
     fontWeight: 'normal',
     color: AppStyles.color.desc,
     fontSize: AppStyles.fontSize.desc,
-    // alignSelf: 'flex-start',
   },
   text:{
     fontWeight: 'normal',
     color: AppStyles.color.text,
     fontSize: AppStyles.fontSize.text,
-    // lineHeight: 20,
   },
 }
 
@@ -153,6 +153,7 @@ export const ListStyle = StyleSheet.create({
  
 export const Container = StyleSheet.create({
   main:{
+    width: '100%',
     flex: 1,
     backgroundColor: AppStyles.color.white,
   },
@@ -181,16 +182,17 @@ export const Container = StyleSheet.create({
     backgroundColor: AppStyles.color.white,
     width: '100%',
     height: '100%',
-    padding: 20,
+    padding: 10,
   }, 
   normal:{
     width: '100%',
-    margin: 10,
+    // margin: 10,
   },
   column:{
     flex: 1,
     width: '100%',
     alignItems: 'center',
+    textAlign:'center',
   },
   row:{
     flex: 1,
@@ -205,8 +207,7 @@ export const Container = StyleSheet.create({
   },
   desc:{
     width: '60%',
-    // flex: 1,
-    // alignItems: 'flex-start',
+    alignItems: 'flex-start',
   }
 
   

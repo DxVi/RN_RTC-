@@ -1,9 +1,11 @@
 import React from 'react'
-import { Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity , View} from 'react-native';
-import {  Container, RTC} from '../../../AppStyles';
+import {Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity , View} from 'react-native';
+import {Container, RTC} from '../../../AppStyles';
 
 import About from './About';
 import Officers from './Officers';
+import Vmc from './Vmc';
+import GoalsPurposes from './GoalsPurposes';
 
 export default function HomeScreen({navigation}) {
 
@@ -50,6 +52,9 @@ export default function HomeScreen({navigation}) {
              <ScrollView style={Container.home}>
                 <About />
                 <Officers />
+                <Vmc />
+                <GoalsPurposes />
+
              </ScrollView>
         </SafeAreaView>
     )

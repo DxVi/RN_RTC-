@@ -4,7 +4,7 @@
     "cda"         : "Cooperative Development Authority",
     "cdano"       : "Reg. No. 9520-1018000000046928",
     "cdadate"     : "13th September 2019",
-    "name"        : "Romblon Transport Cooperative (RTC)",
+    "name"        : "ROMBLON TRANSPORT COOPERATIVE (RTC)",
     "about"       : "was formed in compliance with the PUV modernization program. RTC aims to provide quality transport services, support the government for modernized transport system and ultimately bring about economic progress."
   },
   "contacts": {
@@ -12,9 +12,9 @@
     "email"       : "romblontransport@yahoo.com",
     "address"     : "Poblacion, San Agustin, Romblon",
     "website"     : "https://romblontrans.web.app",
-    "facebook"    : "https://facebook.com/romblontrans",
-    "twitter"     : "https://twitter.com/romblontrans",
-    "instagram"   : "https://instagram.com/romblontrans"
+    "facebook"    : "facebook.com/romblontrans",
+    "twitter"     : "twitter.com/romblontrans",
+    "instagram"   : "instagram.com/romblontrans"
   },
   "vmc":{
     "vision"      : "To be Romblon's pride in connecting People, Businesses and Communities to a better future through Transport Services.",
@@ -224,7 +224,7 @@
         "position":"Member"
       },
       {
-        "name":"---",
+        "name":"--",
         "position":"Member"
       }
     ],
@@ -332,22 +332,128 @@
         "position": "Accountant"
       },
       {
-        "name": "---",
+        "name": "----",
         "position": "Book Keeper"
       }
     ],
     "operation":[
       {
-        "name": "---",
+        "name": "-----",
         "position": "Store Keeper"
       },
       {
-        "name": "---",
+        "name": "------",
         "position": "Cashier"
       },
       {
         "name": "Allan Moreno",
         "position": "Dispatcher"
+      }
+    ]
+  },
+  "goalsPurposes":{
+    "purposes":[
+      {
+        "item": "i.",
+        "desc": "Provide transport services"
+      },
+      {
+        "item": "ii.",
+        "desc": "Engage in businesses such as:"
+      },
+      {
+        "item": "-",
+        "desc": "Sales of spare parts and supplies"
+      },
+      {
+        "item": "-",
+        "desc": "Vehicle/Driver’s insurance"
+      },
+      {
+        "item": "-",
+        "desc": "Repair and Maintenance Shop"
+      },
+      {
+        "item": "-",
+        "desc": "Vehicle Rental Services"
+      },
+      {
+        "item": "-",
+        "desc": "Micro Lending"
+      },
+      {
+        "item": "iii.",
+        "desc": "Promote economic status of members"
+      },
+      {
+        "item": "iv.",
+        "desc": "Coordinate activities of cooperatives"
+      },
+      {
+        "item": "v.",
+        "desc": "Advocate for cooperative movements"
+      },
+      {
+        "item": "vi.",
+        "desc": "Utilize new technologies"
+      }
+    ],
+    "goals":[
+      {
+        "item": "1.",
+        "desc": "To increase income,savings,investments & productivity"
+      },
+      {
+        "item": "2.",
+        "desc": "To provide social and economic benefits to its members"
+      },
+      {
+        "item": "3.",
+        "desc": "To teach doing things in a Cooperative manner"
+      },
+      {
+        "item": "4.",
+        "desc": "To propagate Cooperative practices"
+      },
+      {
+        "item": "5.",
+        "desc": "To provide opportunities to the less privileged groups"
+      },
+      {
+        "item": "6.",
+        "desc": "To support Gov't,Cooperatives and People org."
+      },
+      {
+        "item": "7.",
+        "desc": "To develop savings mobilization and capital build-up"
+      },
+      {
+        "item": "8.",
+        "desc": "To adopt membership expansion scheme"
+      },
+      {
+        "item": "9.",
+        "desc": "To ensure transparency and accountability"
+      },
+      {
+        "item": "10.",
+        "desc": "To plan welfare of community,members & their families"
+      },
+      {
+        "item": "11.",
+        "desc": "To aim industry's competitiveness and innovativeness"
+      },
+      {
+        "item": "12.",
+        "desc": "To coordinate learning & trade with other Cooperatives"
+      },
+      {
+        "item": "13.",
+        "desc": "To advocate policies for Transport Cooperatives"
+      },
+      {
+        "item": "14.",
+        "desc": "To resist growth-centered development aggression"
       }
     ]
   }

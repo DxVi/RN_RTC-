@@ -12,7 +12,7 @@ export default function About() {
             <Text style={RTC.text}>{data.main.cda}</Text>
             <Text style={RTC.text}>{data.main.cdano}</Text>
             <Text style={RTC.text}>{data.main.cdadate}</Text>
-
+            <Text> </Text>
             <View style={Container.normal}>
                 <Text style={RTC.romblon}>{data.main.name} 
                     <Text style={RTC.desc}> {data.main.about}</Text>
@@ -36,7 +36,7 @@ export default function About() {
                 <Text> </Text>
                 <ListItem item='Type of Cooperative :' desc={data.geninfo.type} />
                 <ListItem item='Area of Operation :' desc={data.geninfo.area} />
-                <ListItem item='Bond of Membership :' desc={data.geninfo.bond} />
+                <ListItem item='Membership Bond :' desc={data.geninfo.bond} />
                 <ListItem item='Members :' desc={data.geninfo.members} />
                 <ListItem item='TIN :' desc={data.geninfo.tin} />
             </View>
