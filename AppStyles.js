@@ -9,7 +9,7 @@ export const AppStyles = {
     title: '#2c455d',
     header: '#4267b2',
     item: '#4267b2',
-    description: '#2c455d',
+    desc: '#2c455d',
     text: "#696969",
     
     white: '#FFFFFF',
@@ -20,7 +20,7 @@ export const AppStyles = {
     title: 25,
     header: 20,
     item: 15,
-    description: 15,
+    desc: 15,
     text: 12,
   },
   buttonWidth: {
@@ -41,7 +41,7 @@ export const AppStyles = {
 //-----------------------------------------------------------------------------------------------
 export const RTC = {
   romblon:{
-    fontSize: AppStyles.fontSize.description,
+    fontSize: AppStyles.fontSize.desc,
     fontWeight: 'bold',
     color: AppStyles.color.header,
     fontFamily: 'sans-serif',
@@ -72,13 +72,15 @@ export const RTC = {
   item:{
     fontWeight: 'normal',
     color: AppStyles.color.item,
-    fontSize: AppStyles.fontSize.description,
+    fontSize: AppStyles.fontSize.desc,
+    // alignSelf: 'flex-end',
   },
-  description:{
+  desc:{
     // lineHeight: 20,
     fontWeight: 'normal',
-    color: AppStyles.color.description,
-    fontSize: AppStyles.fontSize.description,
+    color: AppStyles.color.desc,
+    fontSize: AppStyles.fontSize.desc,
+    // alignSelf: 'flex-start',
   },
   text:{
     fontWeight: 'normal',
@@ -180,44 +182,33 @@ export const Container = StyleSheet.create({
     width: '100%',
     height: '100%',
     padding: 20,
-  },
+  }, 
   normal:{
+    width: '100%',
     margin: 10,
   },
-  basic:{
-    backgroundColor: AppStyles.color.white,
-    width: '100%',
+  column:{
     flex: 1,
+    width: '100%',
     alignItems: 'center',
   },
-  officers:{
-    width: '100%',
+  row:{
     flex: 1,
-    flexWrap: 'wrap',
+    width: '100%',
     flexDirection: 'row',
-    justifyContent: "center",
   },
-  officerCard:{
-    backgroundColor: AppStyles.color.white,
-    width: 150,
-    height: 150,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderStyle: 'dotted',
-    borderWidth: .5,
-    borderColor: AppStyles.color.border,
-    margin: 5,
+  item:{
+    width: '40%',
+    flex: 1,
+    alignItems: 'flex-end',
+    marginRight: 10,
   },
-  chairman:{
-    backgroundColor: AppStyles.color.white,
-    width: 350,
-    height: 150,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderStyle: 'dotted',
-    borderWidth: .5,
-    borderColor: AppStyles.color.border,
-    margin: 5,
+  desc:{
+    width: '60%',
+    // flex: 1,
+    // alignItems: 'flex-start',
   }
+
+  
 });
  
