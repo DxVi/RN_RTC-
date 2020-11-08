@@ -1,8 +1,9 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native';
-import {AppStyles, RTC} from '../../../AppStyles';
+import {AppStyles, rtc} from '../../../AppStyles';
 
 export default function OfficerCard({name, position, group}) {
+    console.log("inside card>>>")
     return (
         <View style={position === 'Chairman' ? styles.chairman : styles.member}>
             <View style={styles.officerCard}>
@@ -11,9 +12,9 @@ export default function OfficerCard({name, position, group}) {
                     resizeMode={'contain'} 
                     source={require('../../../assets/icon.png')} 
                 />
-                <Text style={RTC.item}>{name}</Text>
-                <Text style={RTC.desc}>{position}</Text>
-                <Text style={RTC.item}>{group}</Text>
+                <Text style={rtc.textItem}>{name}</Text>
+                <Text style={rtc.textDesc}>{position}</Text>
+                <Text style={rtc.textItem}>{group}</Text>
             </View>
         </View>
     )
@@ -26,25 +27,26 @@ const styles =  StyleSheet.create({
         margin: 5,
     },
     officerCard:{
-        backgroundColor: AppStyles.color.border,
-        width: 160,
+        // backgroundColor: 'lightskyblue',
+        width: 170,
         height: 170,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 20,
         opacity: .8,
+        borderWidth: 1,
+        borderStyle: 'dashed',
+        borderColor: AppStyles.color.border,
     },
     chairman:{
-        backgroundColor: AppStyles.color.white,
-        width: 300,
+        width: 350,
         height: 170,
         alignItems: 'center',
         justifyContent: 'center',
         margin: 10,
     },
     member:{
-        backgroundColor: AppStyles.color.white,
-        width: 160,
+        width: 180,
         height: 170,
         alignItems: 'center',
         justifyContent: 'center',

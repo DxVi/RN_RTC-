@@ -1,6 +1,6 @@
 import React from 'react'
 import {StyleSheet, Text, View } from 'react-native'
-import {AppStyles, rtc} from '../../../AppStyles';
+import {rtc} from '../../../AppStyles';
 
 export default function ListItem({item, desc}) {
     return (
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     item:{
         width: '35%',
         marginRight: 5,
-        textAlign: AppStyles.textAlign.right,
+        textAlign: 'right',
     },
     desc:{
         width: '65%',

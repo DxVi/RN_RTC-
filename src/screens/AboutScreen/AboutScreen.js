@@ -2,7 +2,7 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
 import about from '../../../assets/data/about.json';
-import {AppStyles, rtc} from '../../../AppStyles';
+import {rtc} from '../../../AppStyles';
 import FadeInView from '../../utils/FadeInView';
 import ListItem from './ListItem';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -59,10 +59,10 @@ export default function AboutScreen() {
 const styles = StyleSheet.create({
     we_are:{
         width: '80%',
-        textAlign: AppStyles.textAlign.center,
+        textAlign: 'center',
     },
     about:{
         width: '90%',
-        textAlign: AppStyles.textAlign.justify,
+        textAlign: 'justify',
     }
 });

@@ -1,0 +1,159 @@
+{
+"officers":[
+      {
+        "name":"Randy Madamo",
+        "position":"Chairman",
+        "group": "BOD"
+      },
+      {
+        "name":"Jose Luis Fabic",
+        "position":"Vice-Chairman",
+        "group": "BOD"
+      },
+      {
+        "name":"Adrian Gaytano",
+        "position":"Member",
+        "group": "BOD"
+      },
+      {
+        "name":"Justino Alojado",
+        "position":"Member",
+        "group": "BOD"
+      },
+      {
+        "name":"--",
+        "position":"Member",
+        "group": "BOD"
+      },
+      {
+        "name": "Isaias Lota",
+        "position": "Chairman",
+        "group": "Audit"
+      },
+      {
+        "name": "Sunday Montesa",
+        "position": "Vice-Chairman",
+        "group": "Audit"
+      },
+      {
+        "name": "Roberto Maines",
+        "position": "Member",
+        "group": "Audit"
+      },
+      {
+        "name": "Adonis Famini",
+        "position": "Chairman",
+        "group": "Election"
+      },
+      {
+        "name": "Crisostomo Ballera",
+        "position": "Vice-Chairman",
+        "group": "Election"
+      },
+      {
+        "name": "Simplicio Mortel",
+        "position": "Member",
+        "group": "Election"
+      },
+      {
+        "name": "Maricar Lachica",
+        "position": "Secretary",
+        "group": ""
+      },
+      {
+        "name": "Archiel Casanova",
+        "position": "Treasurer",
+        "group": ""
+      },
+      {
+        "name": "Jose Luis Fabic",
+        "position": "Chairman",
+        "group": "Education"
+      },
+      {
+        "name": "Joceber Gange",
+        "position": "Vice-Chairman",
+        "group": "Education"
+      },
+      {
+        "name": "Ernesto Fajilagot",
+        "position": "Member",
+        "group": "Education"
+      },
+      {
+        "name": "Anacris Galisanao",
+        "position": "Chairman",
+        "group": "Mediation"
+      },
+      {
+        "name": "Nicolas Omemaga",
+        "position": "Vice-Chairman",
+        "group": "Mediation"
+      },
+      {
+        "name": "Margie Mangaya",
+        "position": "Member",
+        "group": "Mediation"
+      },
+      {
+        "name": "Arturo Mindoro",
+        "position": "Chairman",
+        "group": "Ethics"
+      },
+      {
+        "name": "Dothy Lyn Mangoba",
+        "position": "Vice-Chairman",
+        "group": "Ethics"
+      },
+      {
+        "name": "Judy Ferran",
+        "position": "Member",
+        "group": "Ethics"
+      },
+      {
+        "name": "Michelle Maghanoy",
+        "position": "Chairman",
+        "group": "GAD"
+      },
+      {
+        "name": "Zenaida Manzano",
+        "position": "Vice-Chairman",
+        "group": "GAD"
+      },
+      {
+        "name": "---",
+        "position": "Member",
+        "group": "GAD"
+      },
+      {
+        "name": "Kim Faderon",
+        "position": "General Manager",
+        "group": "Management"
+      },
+      {
+        "name": "---",
+        "position": "Accountant",
+        "group": "Management"
+      },
+      {
+        "name": "----",
+        "position": "Book Keeper",
+        "group": "Management"
+      },
+      {
+        "name": "-----",
+        "position": "Store Keeper",
+        "group": "Operation"
+      },
+      {
+        "name": "------",
+        "position": "Cashier",
+        "group": "Operation"
+      },
+      {
+        "name": "Allan Moreno",
+        "position": "Dispatcher",
+        "group": "Operation"
+      }
+    ]
+}

@@ -1,6 +1,8 @@
+export { default as HomeScreen } from './HomeScreen/HomeScreen'
+
 export { default as AboutScreen} from './AboutScreen/AboutScreen'
 
-export { default as HomeScreen } from './HomeScreen/HomeScreen'
+export { default as OfficerScreen} from './OfficerScreen/OfficerScreen'
 
 export { default as AppLoaderScreen}  from './AppLoaderScreen/AppLoaderScreen'
 

@@ -27,21 +27,7 @@ export const AppStyles = {
     textM: 11,
     textL: 12,
   },
-  textAlign:{
-    auto: 'auto',
-    left: 'left', 
-    right: 'right', 
-    center: 'center', 
-    justify: 'justify',
-  }, 
-  fontStyles:{
-    normal: 'normal', 
-    italic: 'italic',
-  },
-  fontWeight:{
-    normal: 'normal',
-    bold: 'bold',
-  },
+ 
   
 };
 //----------------------------------------
@@ -49,9 +35,9 @@ export const rtc = {
   //--- Romblon Transport
   romblon:{
     color: AppStyles.color.header,
-    fontSize: AppStyles.fontSize.desc,
-    fontWeight: AppStyles.fontWeight.bold,
-    textAlign: AppStyles.textAlign.justify,
+    fontSize: AppStyles.fontSize.header,
+    fontWeight: 'bold',
+    textAlign: 'justify',
   },
   transport:{
     opacity: .85,
@@ -76,48 +62,48 @@ export const rtc = {
 
   //--- TEXT
   textTitle:{    
+    fontWeight: 'bold',
     color: AppStyles.color.title,
     fontSize: AppStyles.fontSize.title,
-    fontWeight: AppStyles.fontWeight.bold,
   },
   textHeader:{
     marginTop: 10,
     marginBottom: 5,
+    fontWeight: 'bold',
     color: AppStyles.color.header,
     fontSize: AppStyles.fontSize.header,
-    fontWeight: AppStyles.fontWeight.bold,
   },
   textItem:{
+    fontWeight: 'normal',
     color: AppStyles.color.item,
     fontSize: AppStyles.fontSize.item,
-    fontWeight: AppStyles.fontWeight.normal,
   },
   textDesc:{
+    fontWeight: 'normal',
     color: AppStyles.color.desc,
     fontSize: AppStyles.fontSize.desc,
-    fontWeight: AppStyles.fontWeight.normal,
   },
   textS:{
+    fontWeight: 'normal',
     color: AppStyles.color.textS,
     fontSize: AppStyles.fontSize.textS,
-    fontWeight: AppStyles.fontWeight.normal,
   },
   textM:{
+    fontWeight: 'normal',
     color: AppStyles.color.textM,
     fontSize: AppStyles.fontSize.textM,
-    fontWeight: AppStyles.fontWeight.normal,
   },
   textL:{
+    fontWeight: 'normal',
     color: AppStyles.color.textL,
     fontSize: AppStyles.fontSize.textL,
-    fontWeight: AppStyles.fontWeight.normal,
   },
 
   //--- CONTAINER
   containerMain:{
     flex: 1,
     width: '100%',
-    backgroundColor: AppStyles.color.border,
+    backgroundColor: AppStyles.color.white,
   },
   containerRowLeft:{
     flex: 1,
