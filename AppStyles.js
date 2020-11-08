@@ -10,206 +10,138 @@ export const AppStyles = {
     header: '#4267b2',
     item: '#4267b2',
     desc: '#2c455d',
-    text: "#696969",
+    textS: '#696969',
+    textM: '#696969',
+    textL: '#696969',
     
-    white: '#FFFFFF',
+    white: 'white',
     black: '#666666',
     border: '#dae4f3',
   },
   fontSize: {
-    title: 25,
-    header: 20,
-    item: 15,
-    desc: 15,
-    text: 12,
+    title: 20,
+    header: 17,
+    item: 13,
+    desc: 13,
+    textS: 10,
+    textM: 11,
+    textL: 12,
   },
-  buttonWidth: {
-    main: "70%"
+  textAlign:{
+    auto: 'auto',
+    left: 'left', 
+    right: 'right', 
+    center: 'center', 
+    justify: 'justify',
+  }, 
+  fontStyles:{
+    normal: 'normal', 
+    italic: 'italic',
   },
-  textInputWidth: {
-    main: "80%"
+  fontWeight:{
+    normal: 'normal',
+    bold: 'bold',
   },
-  fontName: {
-    main: "Noto Sans",
-    bold: "Noto Sans"
-  },
-  borderRadius: {
-    main: 25,
-    small: 5
-  }
+  
 };
-//-----------------------------------------------------------------------------------------------
-export const RTC = {
+//----------------------------------------
+export const rtc = {
+  //--- Romblon Transport
   romblon:{
-    fontSize: AppStyles.fontSize.desc,
-    fontWeight: 'bold',
     color: AppStyles.color.header,
-    // fontFamily: 'sans-serif',
-    textAlign: 'justify',
+    fontSize: AppStyles.fontSize.desc,
+    fontWeight: AppStyles.fontWeight.bold,
+    textAlign: AppStyles.textAlign.justify,
   },
   transport:{
     opacity: .85,
-
   },
+
+  //--- Logo
   logoS:{
     width: 40,
     height:40,
     margin: 5,
   },
   logoM:{
-    width: 250,
-    height: 311,
+    width: 200,
+    height: 261,
     margin: 5,
   },
-  title:{
-    width: '70%',
-    fontWeight: 'bold',
+  logoL:{
+    width: 300,
+    height: 361,
+    margin: 5,
+  },
+
+  //--- TEXT
+  textTitle:{    
     color: AppStyles.color.title,
     fontSize: AppStyles.fontSize.title,
-    textAlign: 'center',
+    fontWeight: AppStyles.fontWeight.bold,
   },
-  header:{
-    fontWeight: 'bold',
+  textHeader:{
+    marginTop: 10,
+    marginBottom: 5,
     color: AppStyles.color.header,
     fontSize: AppStyles.fontSize.header,
+    fontWeight: AppStyles.fontWeight.bold,
   },
-  item:{
-    fontWeight: 'normal',
+  textItem:{
     color: AppStyles.color.item,
-    fontSize: AppStyles.fontSize.desc,
+    fontSize: AppStyles.fontSize.item,
+    fontWeight: AppStyles.fontWeight.normal,
   },
-  desc:{
-    fontWeight: 'normal',
+  textDesc:{
     color: AppStyles.color.desc,
     fontSize: AppStyles.fontSize.desc,
+    fontWeight: AppStyles.fontWeight.normal,
   },
-  text:{
-    fontWeight: 'normal',
-    color: AppStyles.color.text,
-    fontSize: AppStyles.fontSize.text,
+  textS:{
+    color: AppStyles.color.textS,
+    fontSize: AppStyles.fontSize.textS,
+    fontWeight: AppStyles.fontWeight.normal,
   },
+  textM:{
+    color: AppStyles.color.textM,
+    fontSize: AppStyles.fontSize.textM,
+    fontWeight: AppStyles.fontWeight.normal,
+  },
+  textL:{
+    color: AppStyles.color.textL,
+    fontSize: AppStyles.fontSize.textL,
+    fontWeight: AppStyles.fontWeight.normal,
+  },
+
+  //--- CONTAINER
+  containerMain:{
+    flex: 1,
+    width: '100%',
+    backgroundColor: AppStyles.color.border,
+  },
+  containerRowLeft:{
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+  containerRowRight:{
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  containerRowCenter:{
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  containerColumnCenter:{
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+
+
 }
-
-
-//-----------------------------------------------------------------------------------------------
-export const AppIcon = {
-  container: {
-    backgroundColor: "white",
-    borderRadius: 20,
-    padding: 8,
-    marginRight: 10
-  },
-  style: {
-    tintColor: AppStyles.color.tint,
-    width: 25,
-    height: 25
-  },
-};
-
-export const HeaderButtonStyle = StyleSheet.create({
-  multi: {
-    flexDirection: "row"
-  },
-  container: {
-    padding: 10
-  },
-  image: {
-    justifyContent: "center",
-    width: 35,
-    height: 35,
-    margin: 6
-  },
-  rightButton: {
-    color: AppStyles.color.tint,
-    marginRight: 10,
-    fontWeight: "normal",
-    fontFamily: AppStyles.fontName.main
-  }
-});
-
-export const ListStyle = StyleSheet.create({
-  title: {
-    fontSize: 16,
-    color: AppStyles.color.subtitle,
-    fontFamily: AppStyles.fontName.bold,
-    fontWeight: "bold"
-  },
-  subtitleView: {
-    minHeight: 55,
-    flexDirection: "row",
-    paddingTop: 5,
-    marginLeft: 10
-  },
-  leftSubtitle: {
-    flex: 2
-  },
-  avatarStyle: {
-    height: 80,
-    width: 80
-  }
-});
-
-// -------------------------------------------------------------------------------------------
- 
-export const Container = StyleSheet.create({
-  main:{
-    width: '100%',
-    flex: 1,
-    backgroundColor: AppStyles.color.white,
-  },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: AppStyles.color.white,
-    width: '100%',
-    height: 43,
-    borderBottomWidth: 1,
-    borderBottomColor: AppStyles.color.border,
-  },
-  menuIcons:{
-    backgroundColor: AppStyles.color.white,
-    width: '100%',
-    height: 25,
-    flexDirection: 'row',
-  },
-  menuImages:{
-    backgroundColor: AppStyles.color.white,
-    width: '100%',
-    height: 130,
-    flexDirection: 'row',
-  },
-  home: {
-    backgroundColor: AppStyles.color.white,
-    width: '100%',
-    height: '100%',
-    padding: 10,
-  }, 
-  normal:{
-    width: '100%',
-    // margin: 10,
-  },
-  column:{
-    flex: 1,
-    width: '100%',
-    alignItems: 'center',
-    textAlign:'center',
-  },
-  row:{
-    flex: 1,
-    width: '100%',
-    flexDirection: 'row',
-  },
-  item:{
-    width: '40%',
-    flex: 1,
-    alignItems: 'flex-end',
-    marginRight: 10,
-  },
-  desc:{
-    width: '60%',
-    alignItems: 'flex-start',
-  }
-
-  
-});
- 

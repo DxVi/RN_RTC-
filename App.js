@@ -1,7 +1,8 @@
+import 'react-native-gesture-handler';
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { LoginScreen, HomeScreen, RegistrationScreen } from './src/screens'
+import { AboutScreen, LoginScreen, HomeScreen, RegistrationScreen } from './src/screens'
 import reducer, {initialState} from './reducer'
 import {StateProvider} from './StateProvider'
 
@@ -15,8 +16,9 @@ export default function App() {
   return (
     <StateProvider initialState={initialState} reducer={reducer}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
+        <Stack.Navigator initialRouteName="About" screenOptions={{headerShown: false}}>
           <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="About" component={AboutScreen} />
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Registration" component={RegistrationScreen} />
         </Stack.Navigator>

@@ -36,7 +36,7 @@ const styles =  StyleSheet.create({
     },
     chairman:{
         backgroundColor: AppStyles.color.white,
-        width: 400,
+        width: 300,
         height: 170,
         alignItems: 'center',
         justifyContent: 'center',
