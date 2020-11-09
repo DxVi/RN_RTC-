@@ -1,0 +1,118 @@
+{
+"vmc":{
+  "vision"     : "To Be Romblon's Pride In Connecting People, Businesses And Communities To A Better Future Through Transport Services.",
+  "mission1"   : "To provide the best Transport System which is;",
+  "mission2"   : "Safe, Reliable, Efficient, and Environmentally Friendly",
+  "mission3"   : "Caring to the Customers, Commuting Public, Drivers and Operators",
+  "mission4"   : "Concerned for the Community Development and Economic Growth",
+  "corevalues" : "Loyalty, Honesty, Efficiency, Reliability, Trust, Commitment, Transparency, Respect"
+},
+"purposes":[
+  {
+    "item": "i.",
+    "desc": "Provide public land transport services primarily to members and the commuting public;"
+  },
+  {
+    "item": "ii.",
+    "desc": "Engage in allied services or businesses such as:"
+  },
+  {
+    "item": "-",
+    "desc": "Marketing of Spare Parts and Supplies;"
+  },
+  {
+    "item": "-",
+    "desc": "Marketing of Vehicle/Driver’s Insurance Policies;"
+  },
+  {
+    "item": "-",
+    "desc": "Auto Repair and Maintenance Shop;"
+  },
+  {
+    "item": "-",
+    "desc": "Vehicle Rental Services; and"
+  },
+  {
+    "item": "-",
+    "desc": "Micro Lending;"
+  },
+  {
+    "item": "iii.",
+    "desc": "Promoting and advancing the economic and social status of the members;"
+  },
+  {
+    "item": "iv.",
+    "desc": "Coordinating and facilitating the activities of cooperatives;"
+  },
+  {
+    "item": "v.",
+    "desc": "Advocating for the cause of the cooperative movements;"
+  },
+  {
+    "item": "vi.",
+    "desc": "Ensuring the viability of cooperatives through the utilization of new technologies; and"
+  },
+  {
+    "item": "vii.",
+    "desc": "Encouraging and promoting self-help or self-employment as an engine for economic growth and poverty alleviation."
+  }
+],
+"goals":[
+  {
+    "item": "i.",
+    "desc": "To attain increased income, savings, investments, productivity, and purchasing power, and promote among themselves equitable distribution of the surplus through maximum utilization of economies of scale, cost-sharing and risk-sharing."
+  },
+  {
+    "item": "ii.",
+    "desc": "To provide optimum social and economic benefits to its members;"
+  },
+  {
+    "item": "iii.",
+    "desc": "To teach the members efficient ways of doing things in a Cooperative manner;"
+  },
+  {
+    "item": "iv.",
+    "desc": "To propagate Cooperative practices and innovative ideas in business undertakings and management;"
+  },
+  {
+    "item": "v.",
+    "desc": "To empower through provision of access, ownership, control and opportunities to the poor, vulnerable, lower income and less privileged groups to increase their ownership in the wealth of the nation;"
+  },
+  {
+    "item": "vi.",
+    "desc": "To actively support the government, other Cooperatives and people-oriented organization, both local and foreign, in promoting Cooperatives as a practical means towards sustainable socio-economic development under a truly just and democratic society;"
+  },
+  {
+    "item": "vii",
+    "desc": "To develop a dynamic savings mobilization and capital build-up schemes to sustain its developmental activities and long-term investments, thereby ensuring optimum economic benefits to the members, their families and the communities;"
+  },
+  {
+    "item": "viii.",
+    "desc": "To adopt membership expansion mechanism/scheme, thereby ensuring growth of the Cooperative movement;"
+  },
+  {
+    "item": "ix.",
+    "desc": "To implement policy guidelines that will ensure transparency, accountability and equitable access to its resources and services, and promote the interests of the members;"
+  },
+  {
+    "item": "x.",
+    "desc": "To adopt such other plans as may help foster the welfare of the members, their families and the community;"
+  },
+  {
+    "item": "xi.",
+    "desc": "To advance the competitiveness and innovativeness of the industry;"
+  },
+  {
+    "item": "xii.",
+    "desc": "To coordinate with other Cooperatives on learning exchanges, coop trade, and information exchanges in fostering sustainable development;"
+  },
+  {
+    "item": "xiii.",
+    "desc": "To advocate legal framework and enabling policies appropriate for the development of transport Cooperatives; and"
+  },
+  {
+    "item": "xiv.",
+    "desc": "To be the voice and the institution of the poor and the excluded in resisting the growth-centered development aggression and instead promote people-centered development. "
+  }
+]
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 import {StyleSheet, Text, View } from 'react-native'
-import {rtc} from '../../../AppStyles';
+import {rtc} from './AppStyles';
 
-export default function ListItem({item, desc}) {
+export default function AboutItem({item, desc}) {
     return (
         <View style={rtc.containerRowLeft}>
             <Text style={[styles.item, rtc.textItem]}>{item}</Text> 

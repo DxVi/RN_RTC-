@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useStateValue } from '../../../StateProvider';
 import { firebase } from '../../firebase/config'
 
-export default function AppLoaderScreen({navigation}) {
+export default function AppLoader({navigation}) {
     const [{user, email, fullname}, dispatch] = useStateValue();
     const [loading, setLoading] = useState(true)
 

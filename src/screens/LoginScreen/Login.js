@@ -5,7 +5,7 @@ import styles from './styles';
 import { firebase } from '../../firebase/config'
 import { useStateValue } from '../../../StateProvider';
 
-export default function LoginScreen({navigation}) {
+export default function Login({navigation}) {
     const [{user, email, fullname}, dispatch] = useStateValue();
 
     const [emailInput, setEmailInput] = useState('')

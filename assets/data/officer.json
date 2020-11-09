@@ -136,17 +136,17 @@
         "group": "Management"
       },
       {
-        "name": "----",
+        "name": "---",
         "position": "Book Keeper",
         "group": "Management"
       },
       {
-        "name": "-----",
+        "name": "---",
         "position": "Store Keeper",
         "group": "Operation"
       },
       {
-        "name": "------",
+        "name": "---",
         "position": "Cashier",
         "group": "Operation"
       },

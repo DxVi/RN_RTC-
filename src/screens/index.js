@@ -1,11 +1,13 @@
-export { default as HomeScreen } from './HomeScreen/HomeScreen'
+export { default as Home } from './Home'
 
-export { default as AboutScreen} from './AboutScreen/AboutScreen'
+export { default as About } from './About'
 
-export { default as OfficerScreen} from './OfficerScreen/OfficerScreen'
+export { default as Officer } from './Officer'
 
-export { default as AppLoaderScreen}  from './AppLoaderScreen/AppLoaderScreen'
+export { default as Vmc } from './Vmc'
 
-export { default as LoginScreen } from './LoginScreen/LoginScreen'
+export { default as AppLoader}  from './AppLoaderScreen/AppLoader'
 
-export { default as RegistrationScreen } from './RegistrationScreen/RegistrationScreen'
+export { default as Login } from './LoginScreen/Login'
+
+export { default as Registration } from './RegistrationScreen/Registration'

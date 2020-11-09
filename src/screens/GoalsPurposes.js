@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Container, RTC} from '../../../AppStyles';
-import data from '../../../assets/data/RTC.json';
+import { Container, RTC} from '../../AppStyles';
+import data from '../../assets/data/RTC.json';
 
 export default function GoalsPurposes() {
     return (

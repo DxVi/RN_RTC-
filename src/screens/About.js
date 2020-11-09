@@ -1,23 +1,19 @@
 
 import React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import about from '../../../assets/data/about.json';
-import {rtc} from '../../../AppStyles';
-import FadeInView from '../../utils/FadeInView';
-import ListItem from './ListItem';
-import { ScrollView } from 'react-native-gesture-handler';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import {rtc} from './AppStyles';
+import AboutItem from './AboutItem';
+import FadeInView from '../utils/FadeInView';
+import about from '../../assets/data/about.json';
 
-export default function AboutScreen() {
-
-    
-
+export default function About() {
     return (
         <FadeInView style={rtc.containerMain}>
             <ScrollView>
             <View style={rtc.containerColumnCenter}>
                 <Image 
                     style={rtc.logoM} resizeMode={'contain'} 
-                    source={require('../../../assets/images/site/about.jpg')} 
+                    source={require('../../assets/images/site/about.jpg')} 
                 />
                 <Text style={[styles.we_are, rtc.textTitle]}>
                     &#10078;{about.we_are}&#10078;
@@ -33,20 +29,20 @@ export default function AboutScreen() {
 
                 <View style={styles.about}> 
                     <Text style={rtc.textHeader}>Contact Details</Text>
-                    <ListItem item='Mobile :' desc={about.mobile} />
-                    <ListItem item='Email :' desc={about.email} />
-                    <ListItem item='Address :' desc={about.address} />
-                    <ListItem item='Website :' desc={about.website} />
-                    <ListItem item='Facebook :' desc={about.facebook} />
-                    <ListItem item='Twitter :' desc={about.twitter} />
-                    <ListItem item='Instagram :' desc={about.instagram} />
+                    <AboutItem item='Mobile :' desc={about.mobile} />
+                    <AboutItem item='Email :' desc={about.email} />
+                    <AboutItem item='Address :' desc={about.address} />
+                    <AboutItem item='Website :' desc={about.website} />
+                    <AboutItem item='Facebook :' desc={about.facebook} />
+                    <AboutItem item='Twitter :' desc={about.twitter} />
+                    <AboutItem item='Instagram :' desc={about.instagram} />
 
                     <Text style={rtc.textHeader}>General Information</Text>
-                    <ListItem item='Type of Cooperative :' desc={about.type} />
-                    <ListItem item='Area of Operation :' desc={about.area} />
-                    <ListItem item='Membership Bond :' desc={about.bond} />
-                    <ListItem item='Members :' desc={about.members} />
-                    <ListItem item='TIN :' desc={about.tin} />
+                    <AboutItem item='Type of Cooperative :' desc={about.type} />
+                    <AboutItem item='Area of Operation :' desc={about.area} />
+                    <AboutItem item='Membership Bond :' desc={about.bond} />
+                    <AboutItem item='Members :' desc={about.members} />
+                    <AboutItem item='TIN :' desc={about.tin} />
                 </View> 
                 
                 <Text> </Text>

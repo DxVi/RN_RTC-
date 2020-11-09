@@ -1,8 +1,8 @@
 import React from 'react'
 import {Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity , View} from 'react-native';
-import {AppStyles, rtc} from '../../../AppStyles';
+import {AppStyles, rtc} from './AppStyles';
 
-export default function HomeScreen({navigation}) {
+export default function Home({navigation}) {
     const onLoginPress = () => {
         navigation.navigate('Login')
     }
@@ -11,7 +11,7 @@ export default function HomeScreen({navigation}) {
         <SafeAreaView style={rtc.containerMain}>
              {/* Header */}
              <View style={styles.header}>
-                 <Image resizeMode={'cover'} style={rtc.logoS} source={require('../../../assets/icon.png')} />
+                 <Image resizeMode={'cover'} style={rtc.logoS} source={require('../../assets/icon.png')} />
                  <Text style={rtc.romblon}>ROMBLON<Text style={rtc.transport}>Transport</Text></Text>
              </View>
 
@@ -27,8 +27,8 @@ export default function HomeScreen({navigation}) {
                 <ScrollView horizontal={true} style={{height: 150}}>
                     <View style={styles.menuImage}>
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('About')}><Text >About</Text></TouchableOpacity>
-                        <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Registration')}><Text>Officers</Text></TouchableOpacity>
-                        <TouchableOpacity style={styles.menu} onPress={() => alert('menu3')}><Text>VMC</Text></TouchableOpacity>
+                        <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Officer')}><Text>Officers</Text></TouchableOpacity>
+                        <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Vmc')}><Text>VMC</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu4')}><Text>Menu4</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu5')}><Text>Menu5</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu6')}><Text>Menu6</Text></TouchableOpacity>
