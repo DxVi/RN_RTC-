@@ -1,78 +1,75 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native';
-import {AppStyles, rtc} from './AppStyles';
+import {rtc} from './AppStyles';
+import ViewSlide from '../utils/ViewSlide';
 
-export default function OfficerCard({line, name, position, group}) {
+export default function OfficerCard({name, position, group, imgUri}) {
+    const groupIndicator = ('Chairman General Manager Store Keeper').includes(position)
+    const SecretaryTreasurer = ('Secretary Treasurer').includes(position)
+    const int = Math.floor(Math.random() * Math.floor(6))
+    
     return (
-            <View 
-                style={position === 'Chairman' || 
-                       position === 'General Manager' ||
-                       position === 'Store Keeper' ? styles.chairman : styles.member}>
-
-                <View style={line || position==='Treasurer' ? styles.groupLine : ''}>
-                {/* <View>
-                    {
-                        line || position==='Treasurer'
-                        ?<Text>--------------------------------------------------------------</Text>
-                        :<Text></Text>
-                    } */}
-                </View>
-
-                <View style={styles.officerCard}>
+            <ViewSlide style={groupIndicator ? styles.chairman : styles.member} int={int}>
+                <View
+                    style={[styles.officerCard, 
+                            groupIndicator ? styles.groupColor : '',
+                            SecretaryTreasurer ? styles.sectre : ''
+                        ]}
+                    >
                     <Image 
                         style={styles.image} 
-                        resizeMode={'contain'} 
-                        source={require('../../assets/icon.png')} 
+                        // resizeMode={'contain'} 
+                        source={{
+                                uri: imgUri,
+                                cache: 'force-cache'
+                               }} 
                     />
                     <Text style={rtc.textItem}>{name}</Text>
                     <Text style={rtc.textDesc}>{position}</Text>
                     <Text style={rtc.textItem}>{group}</Text>
                 </View>
-            </View>
+            </ViewSlide>
     )
 }
 
 const styles =  StyleSheet.create({
     image:{
+        margin: 5,
         width: 100,
         height:100,
-        margin: 5,
+        borderRadius: 15,
     },
     officerCard:{
         width: 170,
         height: 170,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 20,
         opacity: .8,
         borderWidth: 1,
+        borderRadius: 20,
         borderStyle: 'dashed',
-        borderColor: AppStyles.color.border,
+        borderColor: 'lightgreen',
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     chairman:{
+        margin: 10,
         width: 350,
         height: 170,
         alignItems: 'center',
         justifyContent: 'center',
-        margin: 10,
     },
     member:{
+        margin: 10,
         width: 180,
         height: 170,
         alignItems: 'center',
         justifyContent: 'center',
-        margin: 10,
     },
-    groupLine:{
-        borderBottomWidth: 1,
-        borderBottomColor: 'crimson',
-        // opacity: .3,
-        borderStyle: 'dashed',
-        width: '100%',
-        height: 50,
-        margin: 20,
-        backgroundColor: 'red',
+    groupColor:{
+        borderColor: 'darkgreen',
     },
+    sectre:{
+        borderColor: 'salmon',
+    }
 });
 
 

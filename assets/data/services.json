@@ -1,0 +1,28 @@
+{
+"services": [
+    {
+        "title": "Sales of Vehicle Parts",
+        "description": "PRICE is what you pay VALUE is what you get."
+    },
+    {
+        "title": "Sales of Vehicle Accessories",
+        "description": "The CARS we DRIVE says a lot about us."
+    },
+    {
+        "title": "AUV Operation",
+        "description": "Making transportation FAST and SAFE."
+    },
+    {
+        "title": "Jeepney Operation",
+        "description": "COMPETITIVE rates, safety and reliable on-time."
+    },
+    {
+        "title": "Tour Van Rental",
+        "description": "Sit back, RELAX and ENJOY the ride!"
+    },
+    {
+        "title": "Car Insurance",
+        "description": "Don't WORRY, drive HAPPY!"
+    }
+   ]
+}

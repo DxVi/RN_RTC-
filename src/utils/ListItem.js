@@ -20,27 +20,25 @@ export default function ListItem({item, desc}) {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
+        margin: 2,
         flexDirection: 'row',
-        justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 10,
+        justifyContent: 'center',
         borderWidth: 1,
+        borderRadius: 10,
         borderStyle: 'dashed',
         borderColor: '#dae4f3',
-        marginBottom: 5,
-        padding: 5,
     },
     item:{
         width: '7%',
-        marginLeft: 5,
-        marginRight: 5,
+        padding: 5,
         color: '#4267b2',
     },
     desc:{
         width: '93%',
+        padding: 5,
         color: '#2c455d',
         textAlign: 'justify',
-        paddingRight: 5,
     }
 })
 

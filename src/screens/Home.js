@@ -29,7 +29,7 @@ export default function Home({navigation}) {
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('About')}><Text >About</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Officer')}><Text>Officers</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Vmc')}><Text>VMC</Text></TouchableOpacity>
-                        <TouchableOpacity style={styles.menu} onPress={() => alert('menu4')}><Text>Menu4</Text></TouchableOpacity>
+                        <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Services')}><Text>Services</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu5')}><Text>Menu5</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu6')}><Text>Menu6</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu7')}><Text>Menu7</Text></TouchableOpacity>

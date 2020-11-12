@@ -34,10 +34,10 @@ export const AppStyles = {
 export const rtc = {
   //--- Romblon Transport
   romblon:{
-    color: AppStyles.color.header,
-    fontSize: AppStyles.fontSize.header,
     fontWeight: 'bold',
     textAlign: 'justify',
+    color: AppStyles.color.header,
+    fontSize: AppStyles.fontSize.header,
   },
   transport:{
     opacity: .85,

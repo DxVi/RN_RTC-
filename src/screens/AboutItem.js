@@ -1,13 +1,16 @@
 import React from 'react'
 import {StyleSheet, Text, View } from 'react-native'
 import {rtc} from './AppStyles';
+import ViewSlide from '../utils/ViewSlide';
 
 export default function AboutItem({item, desc}) {
+    const int = Math.floor(Math.random() * Math.floor(6))
+
     return (
-        <View style={rtc.containerRowLeft}>
+        <ViewSlide style={rtc.containerRowLeft} int={int}>
             <Text style={[styles.item, rtc.textItem]}>{item}</Text> 
             <Text style={[styles.desc, rtc.textDesc]}>{desc}</Text>
-        </View>
+        </ViewSlide>
     )
 }
 

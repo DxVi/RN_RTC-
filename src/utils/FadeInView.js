@@ -9,7 +9,7 @@ export default function FadeInView (props) {
         fadeAnim,
         {
           toValue: 1,
-          duration: 3000,
+          duration: 2000,
           useNativeDriver: true,
         }
       ).start();
