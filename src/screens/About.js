@@ -1,8 +1,8 @@
 
 import React from 'react'
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
-import {rtc} from './AppStyles';
-import AboutItem from './AboutItem';
+import {rtc} from '../utils/AppStyles';
+import AboutItem from '../utils/AboutItem';
 import FadeInView from '../utils/FadeInView';
 import about from '../../assets/data/about.json';
 

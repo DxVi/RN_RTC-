@@ -1,0 +1,143 @@
+{
+  "fares": {
+    "odiongan": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "San Agustin",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Bachawan",
+        "rental": "PhP 2,000.00"
+      }
+    ],
+    "sanagustin": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Odiongan",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 2,000.00"
+      }
+    ],
+    "tugdan": [
+      {
+        "destination": "Alcantara",
+        "rental": "PhP 1,000.00"
+      },
+      {
+        "destination": "Calatrava",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Ferrol",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Looc",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "destination": "Odiongan",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "San Agustin",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "San Andres",
+        "rental": "PhP 2,500.00"
+      },
+      {
+        "destination": "Sta. Fe",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "destination": "Sta. Maria",
+        "rental": "PhP 1,500.00"
+      }
+    ],
+    "others": [
+      {
+        "origin":"San Agustin",
+        "destination": "Odiongan via Cabaliwan",
+        "rental": "PhP 2,000.00"
+      },
+      {
+        "origin":"Bachawan",
+        "destination": "Odiongan via Cabaliwan",
+        "rental": "PhP 1,500.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Odiongan",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Tugdan",
+        "rental": "PhP 3,000.00"
+      },
+      {
+        "origin":"Long Beach",
+        "destination": "Sta. Fe",
+        "rental": "PhP 3,500.00"
+      }
+    ]
+  }
+}
+
+ 

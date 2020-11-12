@@ -1,7 +1,7 @@
 import React from 'react'
 import {ScrollView, StyleSheet, Text, View } from 'react-native'
-import {rtc} from './AppStyles';
-import ServicesCard from './ServicesCard';
+import {rtc} from '../utils/AppStyles';
+import ServicesCard from '../utils/ServicesCard';
 import FadeInView from '../utils/FadeInView';
 import data from '../../assets/data/services.json';
 

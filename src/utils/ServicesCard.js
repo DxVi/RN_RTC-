@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native';
 import {AppStyles,rtc} from './AppStyles';
-import ViewSlide from '../utils/ViewSlide';
+import ViewSlide from './ViewSlide';
 
 export default function ServicesCard({title, description, image}) {
     const int = Math.floor(Math.random() * Math.floor(6))

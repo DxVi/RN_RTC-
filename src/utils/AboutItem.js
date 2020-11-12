@@ -1,7 +1,7 @@
 import React from 'react'
-import {StyleSheet, Text, View } from 'react-native'
+import {StyleSheet, Text } from 'react-native'
 import {rtc} from './AppStyles';
-import ViewSlide from '../utils/ViewSlide';
+import ViewSlide from './ViewSlide';
 
 export default function AboutItem({item, desc}) {
     const int = Math.floor(Math.random() * Math.floor(6))

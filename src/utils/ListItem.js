@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
         borderColor: '#dae4f3',
     },
     item:{
-        width: '7%',
+        width: '9%',
         padding: 5,
         color: '#4267b2',
     },
     desc:{
-        width: '93%',
+        width: '91%',
         padding: 5,
         color: '#2c455d',
         textAlign: 'justify',

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity , View} from 'react-native';
-import {AppStyles, rtc} from './AppStyles';
+import {AppStyles, rtc} from '../utils/AppStyles';
 
 export default function Home({navigation}) {
     const onLoginPress = () => {
@@ -30,7 +30,7 @@ export default function Home({navigation}) {
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Officer')}><Text>Officers</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Vmc')}><Text>VMC</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Services')}><Text>Services</Text></TouchableOpacity>
-                        <TouchableOpacity style={styles.menu} onPress={() => alert('menu5')}><Text>Menu5</Text></TouchableOpacity>
+                        <TouchableOpacity style={styles.menu} onPress={() => navigation.navigate('Fares')}><Text>Fares</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu6')}><Text>Menu6</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu7')}><Text>Menu7</Text></TouchableOpacity>
                         <TouchableOpacity style={styles.menu} onPress={() => alert('menu8')}><Text>Menu8</Text></TouchableOpacity>

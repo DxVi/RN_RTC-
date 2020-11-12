@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native';
 import {rtc} from './AppStyles';
-import ViewSlide from '../utils/ViewSlide';
+import ViewSlide from './ViewSlide';
 
 export default function OfficerCard({name, position, group, imgUri}) {
     const groupIndicator = ('Chairman General Manager Store Keeper').includes(position)

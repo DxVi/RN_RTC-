@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { Home, About, Officer, Vmc, Services, Login,  Registration } from './src/screens'
+import { Home, About, Officer, Vmc, Services, Fares, Login,  Registration } from './src/screens'
 import reducer, {initialState} from './reducer'
 import {StateProvider} from './StateProvider'
 
@@ -22,6 +22,7 @@ export default function App() {
           <Stack.Screen name="Officer" component={Officer} />
           <Stack.Screen name="Vmc" component={Vmc} />
           <Stack.Screen name="Services" component={Services} />
+          <Stack.Screen name="Fares" component={Fares} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Registration" component={Registration} />
         </Stack.Navigator>

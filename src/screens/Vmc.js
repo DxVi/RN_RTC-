@@ -1,6 +1,6 @@
 import React from 'react'
 import {ScrollView, StyleSheet, Text, View} from 'react-native'
-import {rtc} from './AppStyles';
+import {rtc} from '../utils/AppStyles';
 import ListItem from '../utils/ListItem';
 import ViewSlide from  '../utils/ViewSlide';
 import data from '../../assets/data/vmc.json';
