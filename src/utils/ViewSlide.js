@@ -22,7 +22,7 @@ export default function ViewSlide (props) {
         slideValue,
         {
           toValue: endValue,
-          duration: 600,
+          duration: 1000,
           useNativeDriver: true,
         }
       ).start();

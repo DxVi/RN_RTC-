@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, Text, View } from 'react-native'
+import {StyleSheet, Text, TouchableOpacity} from 'react-native'
 import { AppStyles } from './AppStyles'
 import ViewSlide from './ViewSlide'
 
@@ -7,9 +7,9 @@ export default function FareCard({header, origin, destination, rental}) {
     const int = Math.floor(Math.random() * Math.floor(6))
     return (
         <ViewSlide style={[styles.container, header ? styles.noborder : '']} int={int}>
-            <Text style={ header ? styles.header : styles.origin}>{origin}</Text>
-            <Text style={ header ? styles.header : styles.destination}>{destination}</Text>
-            <Text style={ header ? styles.header : styles.destination}>{rental}</Text>
+            <Text style={ header ? styles.header : styles.origin}>{origin}</Text> 
+            <Text style={ header ? styles.header : styles.destination}>{destination}</Text> 
+            <Text style={ header ? styles.header : styles.destination}>{rental}</Text> 
         </ViewSlide>
     )
 }
@@ -41,8 +41,7 @@ const styles = StyleSheet.create({
         fontSize: AppStyles.fontSize.header,
     },
     noborder:{
-        // borderWidth: 0,
-        // shadowOffset: {width: 0, height: 0},
+        borderWidth: 0,
     },
     origin:{
         paddingLeft: 30,
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
         color: '#2c455d',
         textAlign: 'left',
         fontSize: AppStyles.fontSize.desc,
-    }
+    },
 })
 
  
